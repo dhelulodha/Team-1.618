@@ -1,0 +1,790 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Team 1.618</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Ornithology a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<!-- css files -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/photoGallery.css" rel="stylesheet" type="text/css"> 
+<link href="css/dreamslider.min.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="css/work.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<!-- /css files -->	
+<!-- font files -->	
+<link href='//fonts.googleapis.com/css?family=Orbitron:400,600,700,900' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<!-- /font files -->	
+<!-- js files -->
+<script src="js/modernizr.js"></script>
+<!-- /js files -->
+<style>
+.cont {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.cont:hover .image {
+  opacity: 0.3;
+}
+
+.cont:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-family:Lucida Sans Unicode;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.text p{
+	color: 	#00ff00;
+}
+.containr {
+    position: absolute;
+    width: 50%;
+	margin-left: 600px;
+}
+
+.imag {
+  opacity: 1;
+  display: block;
+  width: 400px;
+  height: 400px; 
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.tex p{
+	color: 	#00ff00;
+}
+.middl {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 200px;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.containr:hover .imag {
+  opacity: 0.3;
+}
+
+.containr:hover .middl {
+  opacity: 1;
+}
+
+.tex {
+  color: white;
+    font-family:Lucida Sans Unicode;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html"><h1>TEAM 1.618</h1></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Home</a></li>
+				<li><a href="#slide-2">About</a></li>
+				<li><a href="#slide-3">Event</a></li>
+				<li><a href="#slide-4">Cars</a></li>
+				<li><a href="#slide-5">Gallery</a></li>
+				<li><a href="#slide-6">Sponsor</a></li>
+				<li><a href="#slide-7">Contact Us</a></li>
+			</ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<!-- /Fixed Navbar -->
+<!-- Ban -->	
+<div id="Fader" class="fader">
+	<img class="slide img-responsive" src="images/Home _ HVC Event.jpg" alt="w3layouts">
+	<img class="slide img-responsive" src="images/Home _ Gallery 11.jpg" alt="w3layouts">
+	<img class="slide img-responsive" src="images/Home _ Gallery.jpg" alt="w3layouts">
+	<img class="slide img-responsive" src="images/Home _ HVC Event.jpg" alt="w3layouts">
+	<img class="slide img-responsive" src="images/Home _ HVC Event1.jpg" alt="w3layouts">
+	<img class="slide img-responsive" src="images/Home _ Gallery.jpg" alt="w3layouts">
+    <div class="fader_controls">
+		<div class="page prev" data-target="prev">&lsaquo;</div>
+		<div class="page next" data-target="next">&rsaquo;</div>
+		<ul class="pager_list"></ul>
+    </div>
+</div>
+<!-- About Us -->
+<section class="about-us slideanim" id="slide-2" data-slide="2">
+    <div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="about-details">
+					<h3 class="slideanim">About SRM</h3>
+					<p class="p1 slideanim">
+						The SRM University (Sri Ramaswamy Memorial University), formerly SRM Institute of Science and Technology, is a deemed university in the state of Tamil Nadu, India. It was founded in 1985 as SRM Engineering College in Kattankulathur, under University of Madras. It has 7 campuses, 4 in Tamil Nadu-Kattankulathur, Ramapuram, Vadapalani, Tiruchchirappalli and others in NCR, Sonepat and Gangtok. The institute gained deemed status during the 2003-2004 academic year and was renamed SRM Institute of Science and Technology. It became SRM University in 2006, when it attained the status of a full-fledged university, under section 3 of the UGC Act 1956.
+The university is approved by the University Grants Commission and is accredited by the National Assessment and Accreditation Council (NAAC).It has been given an overall'A' Grade by NAAC.
+<br>
+SRM not only focuses on academics but also helps, supports and funds many student teams. It has provided the students with labs and workshops. The faculty members are one of the most skilled and technical faculties out there, who provide theoretical, practical knowledge with guidance.
+
+					</p>
+	</div>
+			</div>
+			<div class="col-sm-6" style="border-left: 1px solid black;">
+				<div class="about-details">
+					<h3 class="slideanim">About Team</h3>
+					<p class="p1 slideanim">
+						TEAM 1.618 is the Official Hybrid Vehicle Racing Team of SRM University, going to participate in Hybrid Vehicle Challenge-2016/17 organised by Imperial Society of Innovative Engineers (ISIE).<br>
+						The Team was formulated on 14th August 2014 & is a multi-disciplinary group of engineering & technology students, from different branches of engineering namely Automobile, Mechanical, Mechatronics, Electrical, Computer Science and Electronics. The team is guided and mentored by faculty advisors of the university. The team will design and fabricate a Hybrid Vehicle under the ISIE restrictions so as to compete with other teams all over the country. Teams will use an Internal Combustion Engine as well as an Electric Motor to run their Vehicles.
+<br>
+The Team was formulated on 14th August 2014 & is a multi-disciplinary group of engineering & technology students, from different branches of engineering namely Automobile, Mechanical, Mechatronics, Electrical, Computer Science and Electronics. The team is guided and mentored by faculty advisors of the university. The team will design and fabricate a Hybrid Vehicle under the ISIE restrictions so as to compete with other teams all over the country. Teams will use an Internal Combustion Engine as well as an Electric Motor to run their Vehicles.
+
+					</p>
+	</div>
+			</div>
+		</div>
+	</div>
+</section>
+</div>
+<!-- /About Us -->
+<!-- === Slide 2 === -->
+<div class="slide story" id="slide-3">
+<section class="our-work slideanim">
+	<h3 class="text-center slideanim">EVENTS</h3>
+	<div class="container">
+		<hr>
+	</div>
+	<p class="text-center1 slideanim">The objective of the competition is to design and fabricate a hybrid Vehicle or an electrical vehicle under ISIE Design restriction so as to give the chance to students to demonstrate and prove their creativity and their engineering skills in comparison to teams from other universities or colleges around the Asia.
+Teams will use Internal Combustion Engine as well as Electric motor to run their Vehicle which is called Hybrid vehicle or a vehicle<br>
+that is charged from an electrical source and propelled by electric drive only which is called an electrical vehicle. This will help them face real-world engineering design projects and other related challenges. Our focus to develop interest among the engineering student towards alternative power sources, those which are the future of Automobiles. This can enhance their practical skills as well as learn team management, so our engineering student will avail to face any hurdles in the way of real engineering.</p>
+	<div class="container-fluid">
+		<br><br>
+		<div class="row">
+			<div class="col-lg-4 col-md-4 client-info">
+				<div class="testimonial slideanim">
+					<div class="test-info1">
+						<p class="test1 slideanim"><h2 style="color:white;text-align:center;font-size: 26px;"></h2><br>
+						<img src="images/HVC Event.jpg" height="250px" width="350px">
+						</p>
+					</div>
+					<div class="test-info2">
+						
+						<div class="test-details1 slideanim">
+							
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 client-info">
+				<div class="testimonial slideanim">
+						<div class="test-info1">
+						<p class="test1 slideanim"><h2 style="color:white;text-align:center;font-size: 26px;"></h2><br>
+						<img src="images/Ampa Event1.jpg"  height="250px" width="350px">
+						</p>
+					</div>
+					<div class="test-info2">
+						<!--<img src="images/test-img2.png" alt="test-img" class="img-responsive slideanim">-->
+						<div class="test-details2 slideanim">
+							<h4></h4>
+							<p class="test2"></p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+	<div class="col-lg-4 col-md-4 client-info">
+				<div class="testimonial slideanim">
+						<div class="test-info1">
+						<p class="test1 slideanim"><h2 style="color:white;text-align:center;font-size: 26px;"></h2><br>
+						<img src="images/Ampa Event.jpg"  height="250px" width="350px">
+						</p>
+					</div>
+					<div class="test-info2">
+						<!--<img src="images/test-img2.png" alt="test-img" class="img-responsive slideanim">-->
+						<div class="test-details2 slideanim">
+							<h4></h4>
+							<p class="test2"></p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+	<div class="col-lg-4 col-md-4 client-info" style="margin-top: 50px;">
+				<div class="testimonial slideanim">
+						<div class="test-info1">
+						<p class="test1 slideanim"><h2 style="color:white;text-align:center;font-size: 26px;"></h2><br>
+						<img src="images/Ampa Event.jpg"  height="250px" width="350px">
+						</p>
+					</div>
+					<div class="test-info2">
+						<!--<img src="images/test-img2.png" alt="test-img" class="img-responsive slideanim">-->
+						<div class="test-details2 slideanim">
+							<h4></h4>
+							<p class="test2"></p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+<div class="col-lg-4 col-md-4 client-info" style="margin-top: 50px;">
+				<div class="testimonial slideanim">
+						<div class="test-info1">
+						<p class="test1 slideanim"><h2 style="color:white;text-align:center;font-size: 26px;"></h2><br>
+						<img src="images/Home_HVCEvent1.jpg"  height="250px" width="350px">
+						</p>
+					</div>
+					<div class="test-info2">
+						<!--<img src="images/test-img2.png" alt="test-img" class="img-responsive slideanim">-->
+						<div class="test-details2 slideanim">
+							<h4></h4>
+							<p class="test2"></p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+<div class="col-lg-4 col-md-4 client-info" style="margin-top: 50px;">
+				<div class="testimonial slideanim">
+						<div class="test-info1">
+						<p class="test1 slideanim"><h2 style="color:white;text-align:center;font-size: 26px;"></h2><br>
+						<img src="images/Events.jpg"  height="250px" width="350px">
+						</p>
+					</div>
+					<div class="test-info2">
+						<!--<img src="images/test-img2.png" alt="test-img" class="img-responsive slideanim">-->
+						<div class="test-details2 slideanim">
+							<h4></h4>
+							<p class="test2"></p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+	</div><!-- /container -->
+</section>	
+</div><!-- /slide2 -->
+<!-- /Portfolio Section -->
+<!-- === Slide 4 - Process === -->
+<!-- Testimonial Section -->
+<div class="slide story" id="slide-4" data-slide="4">
+<section class="testimonials slideanim">
+	<h3 class="text-center slideanim">Our Cars</h3>
+	<div class="container">
+		<hr>
+	</div>
+	<p class="text-center slideanim"></p>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 client-info">
+				<div class="testimonial slideanim">
+					<div class="test-info1">
+						<p class="test1 slideanim"><h2 style="color:white;text-align:center;font-size: 26px;">PHI 1.0</h2><br>
+						<ul class = "cars1" style = "text-decoration:none; color:white;">
+							<li>Top Speed: 65+ KMPH</li>
+							<li>Weight : 300Kg</li>
+							<li>Acceleration : 0 to Max speed in 7.2 Sec</li>
+							<li>Chassis : Chromoly 4130 Steel</li>
+							<li>Body Panels : Fibre Reinforced Plastic</li>
+							<li>Engine : Briggs and Stratton 950 Series 208 cc</li>
+							<li>Engine Power : 6.5 BHP @ 3600 rpm</li>
+							<li>Electric Motor : BLDC Motor 48 V</li>
+							<li>Electric Motor Power : 1.5 KW @ 3000 rpm </li>
+						</ul>
+						
+						</p>
+					</div>
+					<div class="test-info2">
+						
+						<div class="test-details1 slideanim">
+							
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 client-info">
+				<div class="testimonial slideanim">
+					<div class="test-info1">
+						<p class="test1"><h2 style="color:white;text-align:center;font-size: 26px;">PHI 2.0</h2><br></p>
+						<ul class = "cars1" style = "text-decoration:none; color:white;">
+							<li style="font-size: 24px;">Coming Soon</li>
+							
+						</ul>
+					</div>
+					<div class="test-info2">
+						<!--<img src="images/test-img2.png" alt="test-img" class="img-responsive slideanim">-->
+						<div class="test-details2 slideanim">
+							<h4></h4>
+							<p class="test2"></p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+			<!--<div class="col-lg-4 col-md-4 client-info">
+				<div class="testimonial slideanim">
+					<div class="test-info1">
+						<p class="test1 slideanim">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1600s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					</div>
+					<div class="test-info2">
+						<img src="images/test-img3.png" alt="test-img" class="img-responsive slideanim">
+						<div class="test-details3 slideanim">
+							<h4>Elizabeth</h4>
+							<p class="test2">Scientist</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div> -->
+		</div>
+	</div>
+</section>	
+</div><!-- /slide4 -->
+<div class="slide story" id="slide-5" data-slide="5">
+<section class="gallery slideanim">
+	<h3 class="text-center slideanim">OUR GALLERY</h3>
+	<div class="container">
+		<hr>
+	</div>
+	<!--<p class="text-center1 slideanim">The objective of the competition is to design and fabricate a hybrid Vehicle or an electrical vehicle under ISIE Design restriction so as to give the chance to students to demonstrate and prove their creativity and their engineering skills in comparison to teams from other universities or colleges around the Asia.
+Teams will use Internal Combustion Engine as well as Electric motor to run their Vehicle which is called Hybrid vehicle or a vehicle<br>
+that is charged from an electrical source and propelled by electric drive only which is called an electrical vehicle. This will help them face real-world engineering design projects and other related challenges. Our focus to develop interest among the engineering student towards alternative power sources, those which are the future of Automobiles. This can enhance their practical skills as well as learn team management, so our engineering student will avail to face any hurdles in the way of real engineering.</p>-->
+	<div class="container-fluid">
+		<div class="demo-wrapper">
+			<ul class="portfolio-items">
+				<li class="item">
+					<figure>
+						<div class="view"> <img src="images/1.jpg" /> </div>
+						<figcaption>
+							<p><span><a href="#0">Publicity Event at Ampa Skywalk Mall</a></span></p>
+							<p><span>By Ornithology</span></p>
+						</figcaption>
+					</figure>
+					<div class="date">2016</div>
+				</li>
+				<li class="item">
+					<figure>
+						<div class="view"> <img src="images/2.jpg" /> </div>
+						<figcaption>
+							<p><span><a href="#0">Publicity Event at Ampa Skywalk Mall</a></span></p>
+							<p><span>By Ornithology</span></p>
+						</figcaption>
+					</figure>
+					<div class="date">2016</div>
+				</li>
+				<li class="item">
+					<figure>
+						<div class="view"> <img src="images/3.jpg" /> </div>
+						<figcaption>
+							<p><span><a href="#0">Publicity Event at Ampa Skywalk Mall</a></span></p>
+							<p><span>By Ornithology</span></p>
+						</figcaption>
+					</figure>
+					<div class="date">2016</div>
+				</li>
+				<li class="item">
+					<figure>
+						<div class="view"> <img src="images/4.jpg" /> </div>
+						<figcaption>
+							<p><span><a href="#0">Publicity Event at Ampa Skywalk Mall</a></span></p>
+							<p><span>By Ornithology</span></p>
+						</figcaption>
+					</figure>
+					<div class="date">2016</div>
+				</li>
+				<li class="item">
+					<figure>
+						<div class="view"> <img src="images/5.jpg" /> </div>
+						<figcaption>
+							<p><span><a href="#0">Publicity Event at Ampa Skywalk Mall</a></span></p>
+							<p><span>By Ornithology</span></p>
+						</figcaption>
+					</figure>
+					<div class="date">2016</div>
+				</li>
+				<li class="item">
+					<figure>
+						<div class="view"> <img src="images/6.jpg" /> </div>
+						<figcaption>
+							<p><span><a href="#0">Publicity Event at Ampa Skywalk Mall</a></span></p>
+							<p><span>By Ornithology</span></p>
+						</figcaption>
+					</figure>
+					<div class="date">2016</div>
+				</li>
+				<li class="item">
+					<figure>
+						<div class="view"> <img src="images/7.jpg" /> </div>
+						<figcaption>
+							<p><span><a href="#0">Publicity Event at Ampa Skywalk Mall</a></span></p>
+							<p><span>By Ornithology</span></p>
+						</figcaption>
+					</figure>
+					<div class="date">2016</div>
+				</li>
+				<li class="item">
+					<figure>
+						<div class="view"> <img src="images/9.jpg" /> </div>
+						<figcaption>
+							<p><span><a href="#0">Publicity Event at Ampa Skywalk Mall</a></span></p>
+							<p><span>By Ornithology</span></p>
+						</figcaption>
+					</figure>
+					<div class="date">2016</div>
+				</li>
+				<li class="item">
+					<figure>
+						<div class="view"> <img src="images/Home and Gallery.jpg" /> </div>
+						<figcaption>
+							<p><span><a href="#0">Unveiling at SRM University</a></span></p>
+							<p><span>By Ornithology</span></p>
+						</figcaption>
+					</figure>
+					<div class="date">2016</div>
+				</li>
+				<li class="item">
+					<figure>
+						<div class="view"> <img src="images/Home _ Gallery 11.jpg" /> </div>
+						<figcaption>
+							<p><span><a href="#0">Publicity Event at Ampa Skywalk Mall</a></span></p>
+							<p><span>By Ornithology</span></p>
+						</figcaption>
+					</figure>
+					<div class="date">2016</div>
+				</li>
+				<li class="item">
+					<figure>
+						<div class="view"> <img src="images/Gallery9.jpg" /> </div>
+						<figcaption>
+							<p><span><a href="#0">Publicity Event at Ampa Skywalk Mall</a></span></p>
+							<p><span>By Ornithology</span></p>
+						</figcaption>
+					</figure>
+					<div class="date">2016</div>
+				</li>
+				<li class="item">
+					<figure>
+						<div class="view"> <img src="images/Gallery7.jpg" /> </div>
+						<figcaption>
+							<p><span><a href="#0">HVC 2016/17</a></span></p>
+							<p><span>By Ornithology</span></p>
+						</figcaption>
+					</figure>
+					<div class="date">2016</div>
+				</li>
+				<li class="item">
+					<figure>
+						<div class="view"> <img src="images/Gallery13.jpg" /> </div>
+						<figcaption>
+							<p><span><a href="#0">Unveiling at SRM University</a></span></p>
+							<p><span>By Ornithology</span></p>
+						</figcaption>
+					</figure>
+					<div class="date">2015</div>
+				</li>
+				<li class="item">
+					<figure>
+						<div class="view"> <img src="images/Gallery12.jpg" /> </div>
+						<figcaption>
+							<p><span><a href="#0">HVC 2016/17.</a></span></p>
+							<p><span>By Ornithology</span></p>
+						</figcaption>
+					</figure>
+					<div class="date">2016</div>
+				</li>
+				<li class="item">
+					<figure>
+						<div class="view"> <img src="images/Home _ Gallery.jpg" /> </div>
+						<figcaption>
+							<p><span><a href="#0">HVC 2016/17.</a></span></p>
+							<p><span>By Ornithology</span></p>
+						</figcaption>
+					</figure>
+					<div class="date">2016</div>
+				</li>
+				<li class="item">
+					<figure>
+						<div class="view"> <img src="images/Gallery8.jpg" /> </div>
+						<figcaption>
+							<p><span><a href="#0">HVC 2016/17.</a></span></p>
+							<p><span>By Ornithology</span></p>
+						</figcaption>
+					</figure>
+					<div class="date">2016</div>
+				</li>
+				
+			</ul>
+		</div>
+	</div><!-- /container -->
+</section>	
+<!-- Portfolio Section -->
+<!-- === SLide 3 - Portfolio -->
+<div class="slide story" id="slide-5" data-slide="5">
+\</div><!-- /slide3 -->
+<!-- /Testimonial Section -->
+<!-- Pricing Tables -->
+<div class="slide story" id="slide-6" data-slide="6">
+<section class="pricing-table slideanim">
+	<div class="features">
+		<h3>Sponsors</h3>
+		<div class = "container">
+			<div class = "row">
+				<div class = " cont col-lg-offset-1 col-lg-3">
+					<img src = "images/sponsors.jpg" class="image" style = "width:400px;height: 400px;">
+					<div class="middle">
+				 <div class="text"><h5>Our Sponsors</h5><hr><br><p>1. Indian Oil <br>2. ONGC <br> <a href="Sponsors.html" target=_blank>Read More</a></p></div>
+				</div>
+				</div>
+				<div class = " containr col-lg-offset-2 col-lg-3" >
+					<img src = "images/bene.jpg" class="imag">
+					<div class="middl">
+				 <div class="tex"><h5>Benefits of Sponsoring Us</h5><hr><br><p>1. Publicity at Ampa Skywalk <br>2.Individual Banners<br><a href="benefits.html" target=_blank>Read More</a></p></div>
+				</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+
+
+			<div class="clearfix"></div>
+		</div>	
+</section>
+</div>	
+<!-- /Pricing Tables -->
+<!-- Our History -->
+<!-- /Our History -->
+<!-- /google map -->
+<!-- contact section -->
+<div class="slide story" id="slide-7" data-slide="7">
+<section class="our-contacts slideanim" id="contact">
+	<h3 class="slideanim">Contact Us</h3>
+	<div class="container">
+		<hr>
+	</div>
+	<p class="text-center slideanim"></p>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 slideanim">
+				<form role="form">
+					<div class="row">
+						<div class="form-group col-lg-4">
+							<input type="text" name="Name" class="form-control user-name" placeholder="Your Name" required/>
+						</div>
+						<div class="form-group col-lg-4">
+							<input type="email" name="Email" class="form-control mail" placeholder="Your Email" required/>
+						</div>
+						<div class="form-group col-lg-4">
+							<input type="tel" name="Phone" class="form-control pno" placeholder="Your Phone Number" required/>
+						</div>
+						<div class="clearfix"></div>
+						<div class="form-group col-lg-12">
+							<textarea class="form-control" name="Message" rows="6" placeholder="Your Message" required/></textarea>
+						</div>
+						<div class="form-group col-lg-12">
+							<button type="submit" href="#" class="btn-outline">Submit</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>	
+	</div>
+</section>
+</div>
+<!-- /contact section -->
+<!-- Footer section -->
+<section class="footer">
+	<div class="container">
+		<div class="col-lg-2 col-sm-6">
+			<div class="footer-nav">
+				<h3>Browse It</h3>
+				<ul class="links">
+					<li><a href="index.html"><span class="icon icon-home"></span> Home</a></li>
+					<li><a href="#slide-2"><span class="icon icon-user"></span> Our Work</a></li>
+					<li><a href="#slide-3"><span class="icon icon-camera"></span> Events</a></li>
+					<li><a href="#slide-4"><span class="icon icon-heart"></span> Car</a></li>
+					<li><a href="#slide-5"><span class="icon icon-gears"></span> Gallery</a></li>
+					<li><a href="#slide-6"><span class="icon icon-envelope"></span> Sponsors</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-lg-2 col-sm-6">
+			<div class="footer-nav">
+				<h3>Our Address</h3>
+				<div class="contact-info">
+					<div class="address">	
+						<i class="icon icon-globe"></i>
+						<p class="p3">TEAM 1.618, SRM UNIVERSITY</p> 
+						<p class="p4">KATTANKULATHUR, TAMIL NADU - 603203</p>
+					</div><br>
+			</div>	
+		</div>
+		</div>
+		<div class="col-lg-2 col-sm-6">
+			<div class="footer-nav">
+				<h3></h3><br>
+				<div class="phone">
+						<i class="icon icon-phone"></i>
+						<p class="p3">ABHINAV JAIN <br>TEAM CAPTAIN<br>+91 960 057 8968</p>
+					</div>
+			</div>	
+		</div>
+		<div class="col-lg-2 col-sm-6">
+			<div class="footer-nav">
+				<h3></h3><br>
+				<div class="phone">
+						<i class="icon icon-phone"></i>
+						<p class="p4">ABHIJEET PARMAR <br>CORPORATE HEAD<br>+91 956 614 2114<br> +91 987 210 2114</p>
+					</div>
+			</div>	
+		</div>
+		<div class="col-lg-2 col-sm-6">
+			<div class="footer-nav">
+				<h3></h3><br>
+				<div class="phone">
+						<i class="icon icon-phone"></i>
+						<p class="p4">AYUSH RATHI <br>CORPORATE MANAGER <br> +91 759 787 7345</p>
+					</div>
+			</div>	
+		</div>
+	
+		<div class="col-lg-2 col-sm-6">
+			<div class="footer-nav">
+				<h3></h3><br>
+				<div class="email-info">
+						<i class="icon icon-envelope"></i>
+						<p class="mail" style="padding-bottom: 20px;"><a href="mailto:team1.61803@gmail.com">team1.61803@gmail.com</a></p>
+						<p class="mail" style="padding-bottom: 20px;"><a href="mailto:corporateteam1p618@gmail.com">corporateteam1p618@gmail.com</a></p>
+					</div>
+			</div>	
+		</div>
+	<div class="container">
+	<hr>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="copyright">
+					<p class="text-center">© 2017  All Rights Reserved </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /Footer section -->
+
+</body>
+	<!-- SCRIPTS -->
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/SmoothScroll.min.js"></script>
+	<!-- js for banner -->
+	<script src="js/prefixfree.min.js"></script>
+	 <script src="js_rock/index.js"></script>
+	<!-- /js for banner -->
+	<!-- js for top of work section --
+	<script src="js/index.js"></script>
+	<!-- /js for top of work section -->
+	<!-- js for works section -->
+	<script src="js/modernizr-1.5.min.js"></script> 
+	<script src="js/jquery.mousewheel.js"></script> 
+	<script src="js/work.js"></script>
+	<!-- /js for works section -->
+	<!-- js for footer pics -->
+	<script type="text/javascript" src="js/photoGallery.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		var photoGallery = new PhotoGallery();
+	});
+	</script>
+	<!-- js for footer pics -->
+	<!-- js for gallery -->
+
+	<!-- js for gallery -->
+<!-- js for smooth navigation -->
+	<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, section.footer a").on('click', function(event) {
+
+  // Store hash
+  var hash = this.hash;
+
+  // Using jQuery's animate() method to add smooth page scroll
+  // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+  $('html, body').animate({
+    scrollTop: $(hash).offset().top
+  }, 900, function(){
+
+    // Add hash (#) to URL when done scrolling (default click behavior)
+    window.location.hash = hash;
+    });
+  });
+})
+</script>
+<script>
+$(window).scroll(function() {
+  $(".slideanim").each(function(){
+    var pos = $(this).offset().top;
+
+    var winTop = $(window).scrollTop();
+    if (pos < winTop + 600) {
+      $(this).addClass("slide");
+    }
+  });
+});
+</script>
+<!-- /js for smooth navigation -->	
+		<!-- js for pricing table -->
+		<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+		<script>
+			$(document).ready(function() {
+			$('.popup-with-zoom-anim').magnificPopup({
+			type: 'inline',
+			fixedContentPos: false,
+			fixedBgPos: true,
+			overflowY: 'auto',
+			closeBtnInside: true,
+			preloader: false,
+			midClick: true,
+			removalDelay: 300,
+			mainClass: 'my-mfp-zoom-in'
+			});
+			});
+		</script>
+		<!-- /js for pricing table -->
+</html>
